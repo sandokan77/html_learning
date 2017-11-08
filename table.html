@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Table exercise</title>
+<style>
+table, th, tr, td {
+		border: 1px solid black;
+		border-collapse: collapse;
+		padding: 5px;
+		text-align: right;
+	}
+
+table#table1 {
+		width: 100%;
+		background-color: #f1f1c1;
+}	
+
+table#table1 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#table1 tr:nth-child(odd) {
+   background-color:#fff;
+}
+	
+</style>
+
+</head>
+
+<body>
+<table id="table1">
+	<caption>Table</caption>
+	<tr>
+		<th style="font-family: cursive;background-color: crimson">First header</th>
+		<th style="background: teal;color: coral">Second header</th>
+		<th>Third header</th>
+		<th>Fourth header</th>
+	</tr>
+	<tr>
+	<td rowspan ="2">1.1 and 2.1</td>
+	<td style="background-color: tomato"></td>1.2</td>
+	<td>1.3</td>
+	<td>1.4</td>
+	</tr>
+	<tr>
+	<!-- <td>2.1</td> -->
+	<td>2.2</td>
+	<td colspan = "2">2.3 and 2.4</td>
+	<!-- <td>2.4</td> -->
+	</tr>
+	<tr>
+	<td style="background: c>3.1</td>
+	<td>3.2</td>
+	<td>3.3</td>
+	<td>3.4</td>
+	</tr>	
+</table>
+
+</body>
+
+</html>
